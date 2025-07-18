@@ -1,0 +1,77 @@
+`flat`
+   *
+   * @deprecated
+   */
+  "-moz-transform-style"?: Property.TransformStyle | undefined;
+  /**
+   * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
+   *
+   * **Syntax**: `<single-transition>#`
+   *
+   * @deprecated
+   */
+  "-moz-transition"?: Property.Transition<TTime> | undefined;
+  /**
+   * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
+   *
+   * **Syntax**: `<time>#`
+   *
+   * **Initial value**: `0s`
+   *
+   * @deprecated
+   */
+  "-moz-transition-delay"?: Property.TransitionDelay<TTime> | undefined;
+  /**
+   * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
+   *
+   * **Syntax**: `<time>#`
+   *
+   * **Initial value**: `0s`
+   *
+   * @deprecated
+   */
+  "-moz-transition-duration"?: Property.TransitionDuration<TTime> | undefined;
+  /**
+   * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
+   *
+   * **Syntax**: `none | <single-transition-property>#`
+   *
+   * **Initial value**: all
+   *
+   * @deprecated
+   */
+  "-moz-transition-property"?: Property.TransitionProperty | undefined;
+  /**
+   * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
+   *
+   * **Syntax**: `<easing-function>#`
+   *
+   * **Initial value**: `ease`
+   *
+   * @deprecated
+   */
+  "-moz-transition-timing-function"?: Property.TransitionTimingFunction | undefined;
+  /**
+   * In Mozilla applications, **`-moz-user-input`** determines if an element will accept user input.
+   *
+   * **Syntax**: `auto | none | enabled | disabled`
+   *
+   * **Initial value**: `auto`
+   *
+   * @deprecated
+   */
+  "-moz-user-input"?: Property.MozUserInput | undefined;
+  /**
+   * The **`ime-mode`** CSS property controls the state of the input method editor (IME) for text fields. This property is obsolete.
+   *
+   * **Syntax**: `auto | normal | active | inactive | disabled`
+   *
+   * **Initial value**: `auto`
+   *
+   * @deprecated
+   */
+  "-ms-ime-mode"?: Property.ImeMode | undefined;
+  /**
+   * The **`animation`** shorthand CSS property applies an animation between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
+   *
+   * **Syntax**: `<single-

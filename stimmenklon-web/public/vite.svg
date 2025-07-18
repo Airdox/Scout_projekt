@@ -1,0 +1,41 @@
+Transform | undefined;
+  /**
+   * The **`transform-origin`** CSS property sets the origin for an element's transformations.
+   *
+   * **Syntax**: `[ <length-percentage> | left | center | right | top | bottom ] | [ [ <length-percentage> | left | center | right ] && [ <length-percentage> | top | center | bottom ] ] <length>?`
+   *
+   * **Initial value**: `50% 50% 0`
+   *
+   * @deprecated
+   */
+  "-o-transform-origin"?: Property.TransformOrigin<TLength> | undefined;
+  /**
+   * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
+   *
+   * **Syntax**: `<single-transition>#`
+   *
+   * @deprecated
+   */
+  "-o-transition"?: Property.Transition<TTime> | undefined;
+  /**
+   * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
+   *
+   * **Syntax**: `<time>#`
+   *
+   * **Initial value**: `0s`
+   *
+   * @deprecated
+   */
+  "-o-transition-delay"?: Property.TransitionDelay<TTime> | undefined;
+  /**
+   * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
+   *
+   * **Syntax**: `<time>#`
+   *
+   * **Initial value**: `0s`
+   *
+   * @deprecated
+   */
+  "-o-transition-duration"?: Property.TransitionDuration<TTime> | undefined;
+  /**
+   * The **`transition-property`*

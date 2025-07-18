@@ -1,0 +1,8 @@
+# Offline Voice Cloning - Basis Dependencies
+fastapi
+uvicorn
+python-multipart
+aiofiles
+pyttsx3
+requests
+python-dotenv

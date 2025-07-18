@@ -1,0 +1,52 @@
+#!/bin/bash
+
+echo "🎤 Offline Voice Cloning - Stimmenklon-Builder"
+echo "============================================="
+echo ""
+
+# Überprüfen ob Python installiert ist
+if ! command -v python3 &> /dev/null; then
+    echo "❌ Python 3 ist nicht installiert!"
+    echo "Bitte installieren Sie Python 3.8+ von https://python.org"
+    exit 1
+fi
+
+echo "✅ Python gefunden"
+echo ""
+
+# Backend Setup
+echo "🔧 Backend wird vorbereitet..."
+cd backend
+
+# Virtual Environment erstellen (falls nicht vorhanden)
+if [ ! -d "venv" ]; then
+    echo "📦 Python Virtual Environment wird erstellt..."
+    python3 -m venv venv
+fi
+
+# Virtual Environment aktivieren
+echo "🔄 Virtual Environment wird aktiviert..."
+source venv/bin/activate
+
+# Python Dependencies installieren
+echo "📦 Python-Pakete werden installiert..."
+pip install -r requirements.txt
+
+echo "✅ Backend vorbereitet"
+echo ""
+
+# Backend starten
+echo "🚀 Backend wird gestartet (Port 8000)..."
+echo "📝 Logs: backend/logs.txt"
+echo ""
+nohup python main.py > logs.txt 2>&1 &
+BACKEND_PID=$!
+echo $BACKEND_PID > backend.pid
+
+echo "✅ Backend läuft (PID: $BACKEND_PID)"
+echo "🌐 API verfügbar unter: http://localhost:8000"
+echo "📚 API Dokumentation: http://localhost:8000/docs"
+echo ""
+echo "🎤 Frontend läuft bereits unter der aktuellen URL"
+echo ""
+echo "⏹️  Zum Beenden: ./stop.sh"

@@ -1,0 +1,13 @@
+-snap-points-y"?: Property.ScrollSnapPointsY | undefined;
+  /**
+   * The **`scroll-snap-type-x`** CSS property defines how strictly snap points are enforced on the horizontal axis of the scroll container in case there is one.
+   *
+   * **Syntax**: `none | mandatory | proximity`
+   *
+   * **Initial value**: `none`
+   *
+   * @deprecated
+   */
+  "scroll-snap-type-x"?: Property.ScrollSnapTypeX | undefined;
+  /**
+   * The **`s
